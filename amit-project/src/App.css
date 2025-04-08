@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(42, 190, 158, 0.1);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+header .nav_link {
+    font-size: small;
+}
+header .navdropdown{
+    border: 1px solid red;
+}
+header .navbardropdown div{
+    display: none;
+   
+}
+
+
+
+
+footer {
+    background-color: rgb(42, 190, 158);
+    color: white;
+    margin-top: 50px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+
+.services {
+    text-align: center;
+
+}
+
+.services .col-lg-3 div {
+    border: 1px solid red;
+    height: 110%;
+    background-color: rgb(42, 190, 158, 0.1);
+    border-radius: 10px;
+    /*border-image: linear-gradient(to bottom, blue 20%, red);
+    border-image-slice: 1;*/
+    position: relative;
+    z-index: 20;
+
+}
+.services .col-lg-3 div::after{
+    content: "";
+    height: 100px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: rgb(55, 0, 255);
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    z-index: -10;
+    transform: translate(-5%, 5%);
+    
+}
+.services .col-lg-3 div::before{
+    content: "";
+    height: 100px;
+    width: 100px;
+    background-color: rgb(55, 0, 255);
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: -10;
+    border-radius: 10px;
+    transform: translate(5%, -5%);
+}
+
+.services img {
+    border-radius: 10px;
+}
+
+.services button {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: small;
+    border: none;
+    background-color: #2abe9e;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-bottom: 10px;
+
+}
+
+
+
+.about_us button {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: small;
+    border: none;
+    background-color: #2abe9e;
+}
+.about_us ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h1{
+    text-align: center;
+    
+        font-family: "Bungee Shade", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+      
+}
+.about_us ul li{
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about_us ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+  
+}
