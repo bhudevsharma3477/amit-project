@@ -17,13 +17,7 @@ header {
 header .nav_link {
     font-size: small;
 }
-header .navdropdown{
-    border: 1px solid red;
-}
-header .navbardropdown div{
-    display: none;
-   
-}
+
 
 
 
@@ -32,6 +26,15 @@ footer {
     background-color: rgb(42, 190, 158);
     color: white;
     margin-top: 50px;
+}
+
+footer div.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer div.second_col {
+    text-align: center;
 }
 
 footer ul {
@@ -46,14 +49,28 @@ footer a {
     display: block;
 }
 
+footer button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: small;
+    border: none;
+    color: #2abe9e;
+    background-color: 1px solid white;
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+
+}
+
 
 .services {
     text-align: center;
 
 }
 
-.services .col-lg-3 div {
-    border: 1px solid red;
+.services .service_col div {
+    /* border: 1px solid red;*/
     height: 110%;
     background-color: rgb(42, 190, 158, 0.1);
     border-radius: 10px;
@@ -61,26 +78,32 @@ footer a {
     border-image-slice: 1;*/
     position: relative;
     z-index: 20;
+    border: 1px solid rgb(42, 190, 158);
+    ;
 
 }
-.services .col-lg-3 div::after{
+
+.services .service_col div::after {
     content: "";
     height: 100px;
     border-radius: 10px;
     width: 100px;
-    background-color: rgb(55, 0, 255);
+    /*   background-color: rgb(55, 0, 255);
+*/
     position: absolute;
     bottom: 0%;
     left: 0%;
     z-index: -10;
     transform: translate(-5%, 5%);
-    
+
 }
-.services .col-lg-3 div::before{
+
+.services .service_col div::before {
     content: "";
     height: 100px;
     width: 100px;
-    background-color: rgb(55, 0, 255);
+    /*   background-color: rgb(55, 0, 255);
+*/
     position: absolute;
     top: 0%;
     right: 0%;
@@ -118,30 +141,34 @@ footer a {
     border: none;
     background-color: #2abe9e;
 }
-.about_us ul{
+
+.about_us ul {
     list-style-type: none;
     margin: 0%;
     padding: 0%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-h1{
-    text-align: center;
-    
-        font-family: "Bungee Shade", sans-serif;
-        font-weight: 400;
-        font-style: normal;
 
-      
+h1 {
+    text-align: center;
+
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
 }
-.about_us ul li{
-    
+
+.about_us ul li {
+
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.about_us ul li a{
+
+.about_us ul li a {
     text-decoration: none;
     color: black;
     margin-left: 10px;
-  
+
 }

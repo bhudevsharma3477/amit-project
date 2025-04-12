@@ -11,14 +11,15 @@ const Services = () => {
                 <div className="row">
                     {services_data.map((value, index) => {
                         return <ServicesCol
-                
                             id={index + 1}
                             heading={value.heading}
                             img={value.img}
                             para={value.para}
                         />
                     })}
+                  
                 </div>
+                
             </div>
         </section>
     );

@@ -11,10 +11,12 @@ import Slider from "./components/Slider";
 const App = () => {
   return(
     <>
+   
     <Header />
     <Slider />
     <AboutUs />
     <Services />
+    
     <Footer />
     </>
   );
