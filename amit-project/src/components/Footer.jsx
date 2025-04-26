@@ -1,6 +1,6 @@
 import React from "react";
 import FooterLinks from "./FooterLinks";
-import { footer_link } from "../data";
+import { footer_links } from "../data";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
@@ -14,7 +14,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 //import { MdOutlineCopyright } from "react-icons/md";
 //import { BiSolidCopyright } from "react-icons/bi";
 import { FaCopyright } from "react-icons/fa";
-
+import CopyRightInFooter from "./CopyrightInFooter";
 
 
 
@@ -27,15 +27,13 @@ const Footer = () => {
                         <div className="inner_col">
                             <h4>Newsletter</h4>
                             <p>Welcome to the Kasoota IT Solutions newsletter section! Here, you'll find our latest updates, insights, and innovations tailored to keep you ahead in the ever-evolving world of technology.</p>
-
-
                         </div>
                     </div>
                     <div className="col-lg-3 col-sm-6 second_col">
                         <div className="inner_col">
                             <h4>Explore</h4>
                             <ul>
-                                {footer_link.map((val, id) => <FooterLinks value={val} key={id + 1} />)}
+                                {footer_links.map((val, id) => <FooterLinks value={val} key={id + 1} />)}
                             </ul>
                         </div>
                     </div>
@@ -44,7 +42,9 @@ const Footer = () => {
 
                             <h4>Contact Info</h4>
                             <address>
-                                <FaLocationDot />104, Nangal Sirohi, Mahendergarh, Haryana (123028)
+                                <a href="">
+                                <FaLocationDot /> 104, Nangal Sirohi, Mahendergarh, Haryana (123028)
+                                </a>
                             </address>
                             <a href="mailto:info@itkasoota.com"><IoMdMail /> info@itkasoota.com</a>
                             <a href="#"><FaPhone /> +91 87081 55158</a>
@@ -65,7 +65,7 @@ const Footer = () => {
 
                             IT services & Digital Marketing Agency
                             At Kasoota, we believe in the power of technology to transform businesses and enhance user experiences. With a focus on innovation and customer satisfaction
-                            <a href="#"><button>Explore More <FaLongArrowAltRight /></button></a>
+                            <a href="#"><button>Explore More <FaLongArrowAltRight className="right_arrow_icon" /></button></a>
 
                         </div>
 
@@ -73,19 +73,8 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className="container-fluid">
-            <div className="container second_footer">
-                <div className="row">
-                    <div className="col">
-                        copyright  <FaCopyright />2025 All Rights Reserved By Kasoota IT Solutions
-                    </div>
-                    <div className="col">
-                        Designed By Kasoota IT Solutions
-                    </div>
-                </div>
-            </div>
-            </div>
-           
+           <CopyRightInFooter />
+
         </footer>
     );
 }

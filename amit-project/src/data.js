@@ -1,4 +1,4 @@
-const footer_link = ["Home", "Services", "About Us", "Latest Project", "Contact Us"];
+const footer_links = ["Home", "Services", "About Us", "Latest Project", "Contact Us"];
 
 const services_data = [
     {
@@ -26,4 +26,4 @@ const services_data = [
 
 
 
-export {footer_link, services_data};
+export {footer_links, services_data};

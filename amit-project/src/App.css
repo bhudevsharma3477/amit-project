@@ -33,10 +33,7 @@ footer div.container {
     padding-bottom: 50px;
 }
 
-footer div.second_col, footer div.col-sm-6 {
 
-
-}
 footer div.second_col div.inner_col{
  margin-left: 50%;
  transform: translateX(-50%);
@@ -73,8 +70,36 @@ footer button {
     font-weight: bold;
     letter-spacing: 1px;
     display: block;
-   
-    width: 60%;
+    width: 70%;
+    border: 1px solid transparent;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+footer button:hover{
+color: white;
+border: 1px solid white;
+background-color: #2abe9e;
+}
+footer button:hover .right_arrow_icon{
+    margin-left: 20px;
+    transition-property: margin-left;
+    transition-duration: 0.5s;
+}
+
+footer ul li a::after{
+    height: 1px;
+    width: 0%;
+    border: 1px solid transparent;
+    content: "";
+    display: block;
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+footer ul li a:hover::after{
+    width: 80%;
+    border: 1px solid rgb(15, 92, 75);
 }
 
 footer .icon_div a {
@@ -88,11 +113,23 @@ text-align: center;
     border-radius: 50%;
    margin-top: 20px;
    margin-right: 10px;
+   border: 1px solid transparent;
+   transition-property: all;
+   transition-duration: 0.5s;
+   scale: none;
+}
+footer .icon_div a:hover {
+    background-color: #2abe9e;
+    color: white;
+    border: 1px solid white;
+    scale: 1.2;
+}
+.copyright_in_footer{
+    background-color: rgb(15, 92, 75);
+    text-align: center;
+    padding: 20px 0px;
 }
 
-footer div.second_footer{
-    background-color: rgb(13, 57, 35);
-}
 
 
 
