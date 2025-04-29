@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cal+Sans&family=Russo+One&display=swap');
 
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
+
+/*font-family: "Bungee Shade", sans-serif;
+font-weight: 400;
+font-style: normal;*/
+
+/*
+.bungee-shade-regular {
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }*/
 
 header {
     background-color: rgb(42, 190, 158, 0.1);
@@ -14,134 +26,30 @@ header {
     width: 100%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header .nav_link {
     font-size: small;
 }
 
 
 
+.services {
+    text-align: center;
+    background-color: rgb(15, 92, 75);
 
-
-footer {
-    background-color: rgb(42, 190, 158);
-    color: white;
-    margin-top: 50px;
 }
 
-footer div.container {
+.services div.container {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-
-footer div.second_col div.inner_col{
- margin-left: 50%;
- transform: translateX(-50%);
-}
-footer div.second_col div.inner_col, footer div.col-sm-6 div.inner_col {
-height: 100%;
-  
-}
-footer div.inner_col li{
-    
-    padding-top: 5px;
-}
-
-footer ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0%;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    display: block;
-}
-
-footer button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: small;
-    border: none;
-    color: #2abe9e;
-    background-color: 1px solid white;
-    margin-top: 15px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: block;
-    width: 70%;
-    border: 1px solid transparent;
-    transition-property: all;
-    transition-duration: 0.5s;
-}
-
-footer button:hover{
-color: white;
-border: 1px solid white;
-background-color: #2abe9e;
-}
-footer button:hover .right_arrow_icon{
-    margin-left: 20px;
-    transition-property: margin-left;
-    transition-duration: 0.5s;
-}
-
-footer ul li a::after{
-    height: 1px;
-    width: 0%;
-    border: 1px solid transparent;
-    content: "";
-    display: block;
-    transition-property: all;
-    transition-duration: 0.5s;
-
-}
-footer ul li a:hover::after{
-    width: 80%;
-    border: 1px solid rgb(15, 92, 75);
-}
-
-footer .icon_div a {
-    display: inline-block;
-    background-color: white;
-    color: #2abe9e;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-text-align: center;
-    border-radius: 50%;
-   margin-top: 20px;
-   margin-right: 10px;
-   border: 1px solid transparent;
-   transition-property: all;
-   transition-duration: 0.5s;
-   scale: none;
-}
-footer .icon_div a:hover {
-    background-color: #2abe9e;
-    color: white;
-    border: 1px solid white;
-    scale: 1.2;
-}
-.copyright_in_footer{
-    background-color: rgb(15, 92, 75);
-    text-align: center;
-    padding: 20px 0px;
-}
-
-
-
-
-
-.services {
-    text-align: center;
-
-}
-
 .services .service_col div {
     /* border: 1px solid red;*/
-    height: 110%;
+    /* height: 110%;*/
     background-color: rgb(42, 190, 158, 0.1);
     border-radius: 10px;
     /*border-image: linear-gradient(to bottom, blue 20%, red);
@@ -240,4 +148,124 @@ h1 {
     color: black;
     margin-left: 10px;
 
+}
+
+/*-----------------------------FOOTER-----------------------------*/
+footer {
+    background-color: rgb(42, 190, 158);
+    color: white;
+    margin-top: 50px;
+}
+
+footer div.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+footer div.second_col div.inner_col {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+footer div.second_col div.inner_col,
+footer div.col-sm-6 div.inner_col {
+    height: 100%;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0%;
+}
+footer div.inner_col li {
+    padding-top: 5px;
+}
+footer ul li a::after {
+    height: 1px;
+    width: 0%;
+    border: 1px solid transparent;
+    content: "";
+    display: block;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+footer ul li a:hover::after {
+    width: 80%;
+    border: 1px solid rgb(15, 92, 75);
+}
+footer button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: small;
+    border: none;
+    color: #2abe9e;
+    background-color: 1px solid white;
+    margin-top: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    width: 70%;
+    border: 1px solid transparent;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+footer button:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: #2abe9e;
+}
+
+footer button:hover .right_arrow_icon {
+    margin-left: 20px;
+    transition-property: margin-left;
+    transition-duration: 0.5s;
+}
+
+footer .icon_div a {
+    display: inline-block;
+    background-color: white;
+    color: #2abe9e;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: 1px solid transparent;
+    transition-property: all;
+    transition-duration: 0.5s;
+    scale: none;
+}
+
+footer .icon_div a:hover {
+    background-color: #2abe9e;
+    color: white;
+    border: 1px solid white;
+    scale: 1.2;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/*-----------------------------COPYRIGHT IN FOOTER-----------------------------*/
+.copyright_in_footer {
+    background-color: rgb(15, 92, 75);
+}
+
+.copyright_in_footer div.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.copyright_in_footer .col_2 {
+    text-align: right;
+}
+
+/*-----------------------------RESPONSIVE-----------------------------*/
+@media only screen and (max-width: 576px) {
+    .copyright_in_footer .col-sm-6 {
+        text-align: center;
+        margin: 10px auto;
+    }
 }

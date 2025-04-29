@@ -42,13 +42,13 @@ const Footer = () => {
 
                             <h4>Contact Info</h4>
                             <address>
-                                <a href="">
+                                <a href="https://www.google.com/maps/search/104,+Nangal+Sirohi,+Mahendergarh,+Haryana+(123028)/@28.1903482,76.120609,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">
                                 <FaLocationDot /> 104, Nangal Sirohi, Mahendergarh, Haryana (123028)
                                 </a>
                             </address>
                             <a href="mailto:info@itkasoota.com"><IoMdMail /> info@itkasoota.com</a>
-                            <a href="#"><FaPhone /> +91 87081 55158</a>
-                            <a href="#"><FaPrint /> +91 95881 71731</a>
+                            <a href="/"><FaPhone /> +91 87081 55158</a>
+                            <a href="/"><FaPrint /> +91 95881 71731</a>
                             <div className="icon_div">
                                 <a href="#"><FaFacebookF className="icons" /></a>
                                 <a href="#">  <FaTwitter className="icons" /></a>
